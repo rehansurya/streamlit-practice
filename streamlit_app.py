@@ -18,7 +18,7 @@ answers = {}
 
 # Create input fields for each question
 for i, question in enumerate(questions):
-    answers[i] = st.text_input(question)
+    answers[i] = st.text_area(question)
 
 st.markdown('#### :blue[Content Focus and SEO Strategy]')
 
@@ -36,7 +36,7 @@ answers = {}
 
 # Create input fields for each question
 for i, question in enumerate(questions):
-    answers[i] = st.text_input(question)
+    answers[i] = st.text_area(question)
 
 # Submit button
 if st.button("Submit"):
