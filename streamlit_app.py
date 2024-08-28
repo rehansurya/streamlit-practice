@@ -20,7 +20,6 @@ answers = {}
 for i, question in enumerate(questions):
     answers[i] = st.text_area(question)
 
-st.divider('horizontal')
 
 st.markdown('#### :blue[Content Focus and SEO Strategy]')
 
