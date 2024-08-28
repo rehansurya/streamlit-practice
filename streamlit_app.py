@@ -1,5 +1,6 @@
 import streamlit as st
 
-st.title('Name of the app')
+st.title('Blog Questionnaire for SEO')
 
-st.write('Hello world!')
+st.header('Understanding the Company’s Vision and Goals')
+
