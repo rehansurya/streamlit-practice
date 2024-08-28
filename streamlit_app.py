@@ -20,6 +20,8 @@ answers = {}
 for i, question in enumerate(questions):
     answers[i] = st.text_area(question)
 
+st.divider
+
 st.markdown('#### :blue[Content Focus and SEO Strategy]')
 
 # List of predefined questions
