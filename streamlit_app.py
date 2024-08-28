@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title(':black[Blog Questionnaire for SEO]') 
+st.title('Blog Questionnaire for SEO')
 
-st.markdown('#### Understanding the Company’s Vision and Goals')
+st.markdown(':blue[#### Understanding the Company’s Vision and Goals]')
 
