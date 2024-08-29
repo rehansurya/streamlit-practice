@@ -4,6 +4,8 @@ st.title('Blog Questionnaire for SEO')
 
 st.markdown('#### :blue[Understanding the Company’s Vision and Goals]')
 
+st.form("Email Form")
+
 # List of predefined questions
 questions = [
     "Question 1: What is the name of the blog and short description about the context of the blog's topic?",
