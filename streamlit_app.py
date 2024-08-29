@@ -42,7 +42,7 @@ with st.form("my_form")
         answers[i] = st.text_area(question)
     
     # Submit button
-    if st.button("Submit"):
+    submitted = st.form_submit_button("Submit"):
         # Validate that all questions are answered
         if all(answers[i] for i in range(len(questions))):
             # Prepare email content
