@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title('Blog Questionnaire for SEO')
 
-st.markdown('#### :blue[Understanding the Company’s Vision and Goals]')
+st.markdown('Understanding the Company’s Vision and Goals')
 
 # List of predefined questions
 questions = [
@@ -21,7 +21,7 @@ for i, question in enumerate(questions):
     answers[i] = st.text_area(question)
 
 
-st.markdown('#### :blue[Content Focus and SEO Strategy]')
+st.markdown('Content Focus and SEO Strategy')
 
 # List of predefined questions
 questions = [
