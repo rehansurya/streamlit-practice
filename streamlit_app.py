@@ -47,7 +47,7 @@ if st.button("Submit"):
         email_content = "\n".join([f"{questions[i]} {answers[i]}" for i in range(len(questions))])
         msg = MIMEText(email_content)
         msg["Subject"] = "Submitted Answers"
-        msg["From"] = "abdulrahmanjanoo@gmail.com"
+        msg["From"] = "rehansurya111@gmail.com"
         msg["To"] = "rehansurya111@gmail.com"
 
         # Mailchimp SMTP server details
