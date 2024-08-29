@@ -40,7 +40,7 @@ for i, question in enumerate(questions):
     answers[i] = st.text_area(question)
 
 # Submit button
-with submit=st.button("Submit"):
+if st.button("Submit"):
     # Validate that all questions are answered
     if all(answers[i] for i in range(len(questions))):
         # Prepare email content
