@@ -1,4 +1,4 @@
-import streamlit as st
+eimport streamlit as st
 
 st.title('Blog Questionnaire for SEO')
 
@@ -54,7 +54,7 @@ if st.button("Submit"):
         smtp_server = "smtp.gmail.com"
         smtp_port = 587
         smtp_user = "rehansurya111@gmail.com"
-        smtp_password = "pncz-dvfh-pssl-azpw"
+        smtp_password = "pnczdvfhpsslazpw"
 
         # Send email
         try:
