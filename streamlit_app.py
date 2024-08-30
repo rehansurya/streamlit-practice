@@ -1,4 +1,4 @@
-eimport streamlit as st
+eeimport streamlit as st
 
 st.title('Blog Questionnaire for SEO')
 
