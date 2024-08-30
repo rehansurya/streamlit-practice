@@ -52,7 +52,7 @@ if st.button("Submit"):
 
         # Mailchimp SMTP server details
         smtp_server = "smtp.gmail.com"
-        smtp_port = 465
+        smtp_port = 587
         smtp_user = "rehansurya111@gmail.com"
         smtp_password = "pncz dvfh pssl azpw"
 
