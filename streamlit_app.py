@@ -1,6 +1,4 @@
 import streamlit as st
-from email.mime.text import MIMEText
-import smtplib
 
 st.title('Blog Questionnaire for SEO')
 
