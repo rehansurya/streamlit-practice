@@ -1,4 +1,4 @@
-eeimport streamlit as st
+import streamlit as st
 
 st.title('Blog Questionnaire for SEO')
 
@@ -51,10 +51,10 @@ if st.button("Submit"):
         msg["To"] = "rehansurya111@gmail.com"
 
         # Mailchimp SMTP server details
-        smtp_server = "smtp.mandrillapp.com"
-        smtp_port = 587
-        smtp_user = "rehansurya"
-        smtp_password = "md-SPlEbWybdGKJETx6--60OA"
+        smtp_server = "smtp.mail.com"
+        smtp_port = 465
+        smtp_user = "rehansurya111@gmail.com"
+        smtp_password = "pncz dvfh pssl azpw"
 
         # Send email
         try:
