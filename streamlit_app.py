@@ -1,4 +1,6 @@
 import streamlit as st
+from email.mime.text import MIMEText
+import smtplib
 
 st.title('Blog Questionnaire for SEO')
 
@@ -6,30 +8,16 @@ st.markdown('#### Understanding the Company’s Vision and Goals')
 
 # List of predefined questions
 questions = [
-    "Question 1: What is the name of the blog and short description about the context of the blog's topic?",
-    "Question 2: What is the primary goal and KPIs that you hope to achieve after publishing this blog?",
-    "Question 3: Who is your target audience, and what are their key demographics?",
-    "Question 4: How do you want your brand to be perceived by your audience?",
-    "Question 5: What are the unique selling points (USPs) of your products or services?",
-]
-
-# Store the answers in a dictionary
-answers = {}
-
-# Create input fields for each question
-for i, question in enumerate(questions):
-    answers[i] = st.text_area(question)
-
-
-st.markdown('#### Content Focus and SEO Strategy')
-
-# List of predefined questions
-questions = [
-    "Question 6: What is the name of the blog and short description about the context of the blog's topic?",
-    "Question 7: What is the primary goal and KPIs that you hope to achieve after publishing this blog?",
-    "Question 8: Who is your target audience, and what are their key demographics?",
-    "Question 9: How do you want your brand to be perceived by your audience?",
-    "Question 10: What are the unique selling points (USPs) of your products or services?",
+    "What is the name of the blog and short description about the context of the blog's topic?",
+    "What is the primary goal and KPIs that you hope to achieve after publishing this blog?",
+    "Who is your target audience, and what are their key demographics?",
+    "How do you want your brand to be perceived by your audience?",
+    "What are the unique selling points (USPs) of your products or services?",
+    "What keywords or phrases do you want to target for SEO?",
+    "Who are your main competitors in the industry?",
+    "Do you have any specific content ideas or angles you want to explore?",
+    "What tone or voice should the blog have?",
+    "Are there any specific calls to action (CTAs) you want to include?",
 ]
 
 # Store the answers in a dictionary
@@ -44,7 +32,7 @@ if st.button("Submit"):
     # Validate that all questions are answered
     if all(answers[i] for i in range(len(questions))):
         # Prepare email content
-        email_content = "\n".join([f"{questions[i]} {answers[i]}" for i in range(len(questions))])
+        email_content = "\n".join([f"{questions[i]}: {answers[i]}" for i in range(len(questions))])
         msg = MIMEText(email_content)
         msg["Subject"] = "Submitted Answers"
         msg["From"] = "rehansurya111@gmail.com"
@@ -52,14 +40,13 @@ if st.button("Submit"):
 
         # Mailchimp SMTP server details
         smtp_server = "smtp.mail.com"
-        smtp_port = 587
+        smtp_port = 465
         smtp_user = "rehansurya111@gmail.com"
-        smtp_password = "pncz dvfh pssl azpw"
+        smtp_password = "your_mailchimp_smtp_password"  # Replace with your actual Mailchimp SMTP password
 
         # Send email
         try:
-            with smtplib.SMTP(smtp_server, smtp_port) as server:
-                server.starttls()
+            with smtplib.SMTP_SSL(smtp_server, smtp_port) as server:
                 server.login(smtp_user, smtp_password)
                 server.send_message(msg)
             st.success("Answers submitted successfully!")
