@@ -5,7 +5,7 @@ import smtplib
 # Create a container for the title and logo
 with st.container():
     # Create a row with two columns
-    col1, col2 = st.columns([4, 1])
+    col1, col2 = st.columns([2, 1])
     
     with col1:
         logo_url = "https://cdn.prod.website-files.com/654cf378c048081b445dcc67/6561f93907af8a7a9a45df15_logo-white.svg"  # Replace with the actual URL or file path of your logo
