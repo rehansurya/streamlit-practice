@@ -1,5 +1,3 @@
-# 📦 Practicing Streamlit 
+# Tericsoft SEO Blog Questionnaire❓
 
-Practicing Streamlit ...
-
-## Demo App
+Questionnaire app to submit the Tericsoft's SEO Blog Responses to mail via smtp.
