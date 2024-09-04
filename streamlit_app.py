@@ -6,7 +6,6 @@ logo_url = "https://cdn.prod.website-files.com/654cf378c048081b445dcc67/6561f939
 st.image(logo_url, width=220)
         
 st.title('Blog Questionnaire for SEO')
-st.markdown('#### Understanding the Company’s Vision and Goals')
 
 # List of predefined questions
 questions = [
@@ -15,19 +14,6 @@ questions = [
     "Who is your target audience, and what are their key demographics?",
     "How do you want your brand to be perceived by your audience?",
     "What are the unique selling points (USPs) of your products or services?",
-]
-
-# Store the answers in a dictionary
-answers = {}
-
-# Create input fields for each question
-for i, question in enumerate(questions):
-    answers[i] = st.text_area(question)
-
-st.markdown('#### Content Focus and SEO Strategy')
-
-# List of predefined questions
-questions = [
     "What keywords or phrases do you want to target for SEO?",
     "Who are your main competitors in the industry?",
     "Do you have any specific content ideas or angles you want to explore?",
