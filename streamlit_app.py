@@ -17,6 +17,10 @@ questions = [
 # Store the answers in a dictionary
 answers = {}
 
+# Create input fields for each question
+for i, question in enumerate(questions):
+    answers[i] = st.text_area(question)
+
 st.markdown('#### Content Focus and SEO Strategy')
 
 # List of predefined questions
