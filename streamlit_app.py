@@ -4,12 +4,12 @@ import smtplib
 
 # Add a logo image at the top right
 logo_url = "https://cdn.prod.website-files.com/654cf378c048081b445dcc67/6561f93907af8a7a9a45df15_logo-white.svg"  # Replace with the actual URL or file path of your logo
-col1, col2 = st.columns([1, 3])
+row1, row2 = st.rows([1, 3])
 
-with col1:
+with row1:
     st.image(logo_url, use_column_width=True)
     
-with col2:
+with row2:
     st.title('Blog Questionnaire for SEO')
 
 st.markdown('#### Understanding the Company’s Vision and Goals')
