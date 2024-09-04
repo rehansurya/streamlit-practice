@@ -16,6 +16,9 @@ questions = [
 
 st.markdown('#### Content Focus and SEO Strategy')
 
+# Store the answers in a dictionary
+answers = {}
+
 # List of predefined questions
 questions = [
     "What keywords or phrases do you want to target for SEO?",
