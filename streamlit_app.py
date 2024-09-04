@@ -1,19 +1,11 @@
 import streamlit as st
 from email.mime.text import MIMEText
 import smtplib
-
-# Create a container for the title and logo
-with st.container():
-    # Create a row with two columns
-    col1, col2 = st.columns([1, 2])
     
-    with col1:
-        logo_url = "https://cdn.prod.website-files.com/654cf378c048081b445dcc67/6561f93907af8a7a9a45df15_logo-white.svg"  # Replace with the actual URL or file path of your logo
-        st.image(logo_url, use_column_width=True)
+logo_url = "https://cdn.prod.website-files.com/654cf378c048081b445dcc67/6561f93907af8a7a9a45df15_logo-white.svg"  # Replace with the actual URL or file path of your logo
+st.image(logo_url, use_column_width=True)
         
-    with col2:
-        st.title('Blog Questionnaire for SEO')
-
+st.title('Blog Questionnaire for SEO')
 st.markdown('#### Understanding the Company’s Vision and Goals')
 
 # List of predefined questions
