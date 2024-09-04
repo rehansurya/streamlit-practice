@@ -54,7 +54,7 @@ if st.button("Submit"):
         msg["To"] = "rehansurya111@gmail.com"
 
         # Mailchimp SMTP server details
-        smtp_server = "smtp.mail.com"
+        smtp_server = "smtp.gmail.com"
         smtp_port = 465
         smtp_user = "rehansurya111@gmail.com"
         smtp_password = "pncz dvfh pssl azpw"  # Replace with your actual Mailchimp SMTP password
