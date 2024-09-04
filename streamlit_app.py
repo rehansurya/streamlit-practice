@@ -14,10 +14,10 @@ questions = [
     "What are the unique selling points (USPs) of your products or services?",
 ]
 
-st.markdown('#### Content Focus and SEO Strategy')
-
 # Store the answers in a dictionary
 answers = {}
+
+st.markdown('#### Content Focus and SEO Strategy')
 
 # List of predefined questions
 questions = [
