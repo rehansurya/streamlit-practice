@@ -2,30 +2,16 @@ import streamlit as st
 from email.mime.text import MIMEText
 import smtplib
 
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            [data-testid="stSidebarNav"] {
-                background-image: url(https://cdn.prod.website-files.com/654cf378c048081b445dcc67/6561f93907af8a7a9a45df15_logo-white.svg);
-                background-repeat: no-repeat;
-                padding-top: 120px;
-                background-position: 20px 20px;
-            }
-            [data-testid="stSidebarNav"]::before {
-                content: "My Company Name";
-                margin-left: 20px;
-                margin-top: 20px;
-                font-size: 30px;
-                position: relative;
-                top: 100px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
+# Add a logo image at the top right
+logo_url = "https://example.com/logo.png"  # Replace with the actual URL or file path of your logo
+col1, col2 = st.columns([3, 1])
 
-st.title('Blog Questionnaire for SEO')
+with col1:
+    st.image(logo_url, use_column_width=True)
+    
+with col2:
+    st.title('Blog Questionnaire for SEO')
+
 st.markdown('#### Understanding the Company’s Vision and Goals')
 
 # List of predefined questions
