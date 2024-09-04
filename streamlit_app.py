@@ -12,6 +12,12 @@ questions = [
     "Who is your target audience, and what are their key demographics?",
     "How do you want your brand to be perceived by your audience?",
     "What are the unique selling points (USPs) of your products or services?",
+]
+
+st.markdown('#### Content Focus and SEO Strategy')
+
+# List of predefined questions
+questions = [
     "What keywords or phrases do you want to target for SEO?",
     "Who are your main competitors in the industry?",
     "Do you have any specific content ideas or angles you want to explore?",
