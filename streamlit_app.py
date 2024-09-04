@@ -3,8 +3,8 @@ from email.mime.text import MIMEText
 import smtplib
 
 # Add a logo image at the top right
-logo_url = "https://example.com/logo.png"  # Replace with the actual URL or file path of your logo
-col1, col2 = st.columns([3, 1])
+logo_url = "https://cdn.prod.website-files.com/654cf378c048081b445dcc67/6561f93907af8a7a9a45df15_logo-white.svg"  # Replace with the actual URL or file path of your logo
+col1, col2 = st.columns([1, 3])
 
 with col1:
     st.image(logo_url, use_column_width=True)
