@@ -10,7 +10,7 @@ st.title('Blog Questionnaire for SEO')
 
 # List of predefined questions
 questions = [
-    "What is the name of the blog and short description about the context of the blog's topic?",
+    "What is the name of the blog and short description about the context of the blog's topic",
     "What is the primary goal and KPIs that you hope to achieve after publishing this blog?",
     "Who is your target audience, and what are their key demographics?",
     "How do you want your brand to be perceived by your audience?",
