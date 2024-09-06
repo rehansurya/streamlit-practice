@@ -4,6 +4,8 @@ import smtplib
     
 logo_url = "https://cdn.prod.website-files.com/654cf378c048081b445dcc67/6561f93907af8a7a9a45df15_logo-white.svg"  # Replace with the actual URL or file path of your logo
 st.image(logo_url, width=220)
+
+st.divider()
         
 st.title('Blog Questionnaire for SEO')
 
