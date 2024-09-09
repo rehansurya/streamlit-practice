@@ -6,7 +6,7 @@ logo_url = "https://cdn.prod.website-files.com/654cf378c048081b445dcc67/6561f939
 st.image(logo_url, width=220)
 
 
-st.title('Blog Questionnaire for SEOs')
+st.title('Blog Questionnaire for SEO')
 
 # List of predefined questions
 questions = [
